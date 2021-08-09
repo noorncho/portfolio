@@ -1,8 +1,16 @@
+@import "./assets/styles/variables";
+@import "./assets/styles/nav";
+
 *{
     margin: 0;
     padding: 0;
 }
 
-section{
+body{
+    background-color: $primary-colour;
+    color: $secondary-colour;
+}
+
+section{    
     height: 100vh;
 }

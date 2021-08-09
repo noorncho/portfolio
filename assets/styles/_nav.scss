@@ -1,0 +1,27 @@
+nav{
+    height: 7vh;
+    align-items: center;
+    background-color: #a7778c;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: $secondary-colour;
+    }
+
+    &__title{
+        font-size: larger;
+    }
+
+    &__items{
+        a{            
+            margin-right: 20px;
+        }
+    }
+}
