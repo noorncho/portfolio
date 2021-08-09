@@ -21,6 +21,36 @@ nav {
   margin-right: 20px;
 }
 
+#contact .panel {
+  display: flex;
+  border: #ffe3da solid 2px;
+  align-items: center;
+}
+#contact .left__panel {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#contact .left__panel img {
+  height: 10%;
+  width: 10%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+}
+.contact__form .form__input {
+  border-radius: 5px;
+  width: 100%;
+}
+.contact__form .form__button {
+  border-radius: 40px;
+  width: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,4 +63,8 @@ body {
 
 section {
   height: 100vh;
+}
+
+.test {
+  color: #1d223e;
 }

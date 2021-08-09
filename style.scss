@@ -1,5 +1,6 @@
 @import "./assets/styles/variables";
 @import "./assets/styles/nav";
+@import "./assets/styles/contact";
 
 *{
     margin: 0;
@@ -13,4 +14,8 @@ body{
 
 section{    
     height: 100vh;
+}
+
+.test{
+    color: $primary-colour;
 }
