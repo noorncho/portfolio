@@ -59,6 +59,12 @@ nav {
   width: 50%;
 }
 
+@media screen and (min-width: 770px) {
+  #contact {
+    background-color: #ffe3da;
+    color: #1d223e;
+  }
+}
 * {
   margin: 0;
   padding: 0;

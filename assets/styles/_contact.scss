@@ -43,3 +43,26 @@
     }
 }
 
+@media screen and (min-width: 770px) {
+    #contact{
+        background-color: $secondary-colour;
+        color: $primary-colour
+        /*.panel{
+            display: flex;
+            border: $secondary-colour solid 2px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    
+        .right__panel{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+    
+            img{
+                height: 14%; 
+                width: 14%;
+            }
+        }*/
+    }    
+}
