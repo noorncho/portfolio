@@ -3,4 +3,10 @@
   justify-content: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.project {
+  margin: 20px;
+  text-align: center;
 }
