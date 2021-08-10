@@ -9,6 +9,15 @@
 .project{
     margin: 20px;
     text-align: center;
+
+    a{
+        text-decoration: none;
+        color: $secondary-colour;
+        
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 
 .overlay{
@@ -28,7 +37,7 @@
 .overlay{ 
     color: black;
 
-    > .modal{
+    .modal{
     max-width: 100%;
     position: relative;
     top: 10px;
@@ -41,6 +50,10 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
     pointer-events: auto;
+    }
+
+    a{
+        color: black;
     }
 
     &__image{

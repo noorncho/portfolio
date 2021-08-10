@@ -10,6 +10,9 @@
   margin: 20px;
   text-align: center;
 }
+.project a {
+  text-decoration: none;
+}
 
 .overlay {
   position: fixed;
