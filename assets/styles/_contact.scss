@@ -1,19 +1,21 @@
 #contact{
     .panel{
-        display: flex;
-        border: $secondary-colour solid 2px;
-        align-items: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        margin-top: 20px;
     }
 
-    .left__panel{
-        display: flex;
-        flex-direction: column;
+    .right__panel{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-content: center;
+        width: 100vw;
+    }
 
-        img{
-           height: 10%; 
-           width: 10%;
-        }
+    img{
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -22,14 +24,22 @@
     flex-direction: column;
     align-content: space-around;
     align-items: center;
-
+    gap: 10px;
+    width: 60vw;
+    
+    &__title{
+        text-align: center;
+        width: 75vw;
+    }
+    
     .form__input{
         border-radius: 5px;
         width: 100%;
     }
-
+    
     .form__button{
         border-radius: 40px;
         width: 50%;
     }
 }
+
