@@ -50,11 +50,14 @@
         <h1>My Projects</h1>
         <main class="projects">
             <div class="project">
-                <i class="far fa-image fa-8x"></i>
+                <i class="far fa-image fa-8x" onclick="on()"></i>
                 <div class="project__summary">
                     <h4>Super Adventure</h4>
                     <p>Stack</p>
                     <p>Code | Launch</p>
+                </div>
+                <div class="overlay" id="overlay" onclick="off()">
+                    <p id="text">Overlay Text</p>
                 </div>
             </div>
             <div class="project">
