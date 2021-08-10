@@ -1,10 +1,12 @@
 @import "./assets/styles/variables";
 @import "./assets/styles/nav";
+@import "./assets/styles/project";
 @import "./assets/styles/contact";
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
