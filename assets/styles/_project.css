@@ -32,12 +32,34 @@
   /* Add a pointer on hover */
 }
 
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.overlay {
+  color: black;
+}
+.overlay > .modal {
+  max-width: 100%;
+  position: relative;
+  top: 10px;
+  margin: 5% 10%;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #000000;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  pointer-events: auto;
+}
+.overlay__image {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.overlay__summary {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.overlay__description {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
