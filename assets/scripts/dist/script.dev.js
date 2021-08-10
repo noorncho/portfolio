@@ -3,10 +3,10 @@
 /**
  * Overlay functionality
  */
-function on() {
-  document.getElementById("overlay").style.display = "block";
+function on(img) {
+  document.getElementById("overlay" + img.id).style.display = "block";
 }
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
+function off(mod) {
+  document.getElementById("" + mod.id).style.display = "none";
 }
