@@ -26,10 +26,9 @@ nav {
 /*Home*/
 .home {
   height: 100vh;
-}
-
-#hello-container {
   text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 #hello-text {
@@ -56,6 +55,20 @@ nav {
     background-color: #ffe3da;
   }
 }
+.intro {
+  margin: 30% 10% 0% 10%;
+}
+.intro h1 {
+  font-weight: 3.5em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*Skills Section*/
 .skills {
   display: grid;

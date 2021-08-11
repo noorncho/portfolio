@@ -1,9 +1,8 @@
 .home{
     height: 100vh;
-}
-
-#hello-container {
-	text-align: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 #hello-text {
@@ -29,4 +28,18 @@
 	50% { 
 		background-color: $secondary-colour; 
 	}
+}
+
+.intro{
+    margin: 30% 10% 0% 10%;
+    
+    h1{
+        font-weight: 3.5em;
+    }
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
