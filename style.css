@@ -44,23 +44,16 @@ nav {
 
 .overlay {
   position: fixed;
-  /* Sit on top of the page content */
   display: none;
-  /* Hidden by default */
   width: 100%;
-  /* Full width (cover the whole page) */
   height: 100%;
-  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
   z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
-  /* Add a pointer on hover */
   color: black;
 }
 .overlay .modal {
@@ -73,8 +66,8 @@ nav {
   background: #ffffff;
   box-shadow: 0 0 10px #000000;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
   pointer-events: auto;
 }
 .overlay a {
@@ -86,19 +79,41 @@ nav {
 }
 .overlay__image {
   grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-row-end: 2;
 }
 .overlay__summary {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .overlay__description {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
+@media screen and (min-width: 770px) {
+  .overlay .modal {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .overlay__image {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .overlay__summary {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .overlay__description {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
 #contact .panel {
   display: grid;
   grid-template-rows: 1fr 1fr;
