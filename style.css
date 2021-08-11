@@ -262,6 +262,10 @@ nav {
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 7vh;
+}
+
 body {
   background-color: #1d223e;
   color: #ffe3da;
@@ -271,10 +275,6 @@ body {
 section {
   width: 100vw;
   scroll-snap-align: start;
-}
-
-.test {
-  color: #1d223e;
 }
 
 footer {

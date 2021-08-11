@@ -15,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-padding-top: 7vh;
+}
 
 body{
     background-color: $primary-colour;
@@ -25,10 +28,6 @@ body{
 section{    
     width: 100vw;
     scroll-snap-align: start;
-}
-
-.test{
-    color: $primary-colour;
 }
 
 footer{
