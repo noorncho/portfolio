@@ -1,6 +1,8 @@
 @import "./assets/styles/variables";
 /*Nav*/
 @import "./assets/styles/nav";
+/*Home*/
+@import "./assets/styles/home";
 /*Skills Section*/
 @import "./assets/styles/skills";
 /*Project Section*/
@@ -17,12 +19,18 @@
 body{
     background-color: $primary-colour;
     color: $secondary-colour;
+    scroll-snap-type: y mandatory;
 }
 
 section{    
     width: 100vw;
+    scroll-snap-align: start;
 }
 
 .test{
     color: $primary-colour;
+}
+
+footer{
+    text-align: center;
 }

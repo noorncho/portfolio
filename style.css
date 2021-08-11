@@ -23,6 +23,39 @@ nav {
   margin-right: 20px;
 }
 
+/*Home*/
+.home {
+  height: 100vh;
+}
+
+#hello-container {
+  text-align: center;
+}
+
+#hello-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffe3da;
+  letter-spacing: 2px;
+}
+
+#hello-cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 50px;
+  background-color: #ffe3da;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ffe3da;
+  }
+}
 /*Skills Section*/
 .skills {
   display: grid;
@@ -219,12 +252,18 @@ nav {
 body {
   background-color: #1d223e;
   color: #ffe3da;
+  scroll-snap-type: y mandatory;
 }
 
 section {
   width: 100vw;
+  scroll-snap-align: start;
 }
 
 .test {
   color: #1d223e;
+}
+
+footer {
+  text-align: center;
 }
