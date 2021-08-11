@@ -1,3 +1,13 @@
+
+/*function openNav() {
+	document.getElementById("nav").style.width = "75%";
+}
+
+function closeNav() {
+	document.getElementById("nav").style.width = "0%";
+}*/
+
+
 /**
  * Turn on overlay modal when clicked on image
  * @param {*} img 
