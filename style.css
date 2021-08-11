@@ -23,6 +23,52 @@ nav {
   margin-right: 20px;
 }
 
+/*Home*/
+.home {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#hello-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffe3da;
+  letter-spacing: 2px;
+}
+
+#hello-cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 50px;
+  background-color: #ffe3da;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ffe3da;
+  }
+}
+.intro {
+  margin: 30% 10% 0% 10%;
+}
+.intro h1 {
+  font-weight: 3.5em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*Skills Section*/
 .skills {
   display: grid;
@@ -216,15 +262,21 @@ nav {
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 7vh;
+}
+
 body {
   background-color: #1d223e;
   color: #ffe3da;
+  scroll-snap-type: y mandatory;
 }
 
 section {
   width: 100vw;
+  scroll-snap-align: start;
 }
 
-.test {
-  color: #1d223e;
+footer {
+  text-align: center;
 }

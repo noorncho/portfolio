@@ -1,0 +1,45 @@
+.home{
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#hello-text {
+	display: inline-block;
+	vertical-align: middle;
+	color: $secondary-colour;
+	letter-spacing: 2px;
+}
+
+#hello-cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: $secondary-colour;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: $secondary-colour; 
+	}
+}
+
+.intro{
+    margin: 30% 10% 0% 10%;
+    
+    h1{
+        font-weight: 3.5em;
+    }
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
