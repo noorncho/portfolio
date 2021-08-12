@@ -32,7 +32,7 @@
             <h1>Noor Ncho</h1>
         </div>
         <div class="into-text">            
-            <h3>Software Developer</h3>
+            <h2>Software Developer</h2>
         </div>
     </section>
     
@@ -44,8 +44,16 @@
                 <h2 class="skills__title">Tech Stack</h2>
                 <div id="skills__tech" class="skills__tech line-border">
                     <div class="tech-icon">                        
-                        <i class="fas fa-skull"></i>
-                        <p>Name</p>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="tech-icon">                        
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="tech-icon">                        
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
                     </div>
                     <div class="tech-icon">                        
                         <i class="fas fa-skull"></i>
@@ -80,16 +88,8 @@
                         <p>Name</p>
                     </div>
                     <div class="tech-icon">                        
-                        <i class="fas fa-skull"></i>
-                        <p>Name</p>
-                    </div>
-                    <div class="tech-icon">                        
-                        <i class="fas fa-skull"></i>
-                        <p>Name</p>
-                    </div>
-                    <div class="tech-icon">                        
-                        <i class="fas fa-skull"></i>
-                        <p>Name</p>
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
                     </div>
                 </div>
             </article>
@@ -111,13 +111,13 @@
     
     <!--My Project Page-->
     <section id="project-section">
-        <h1>My Projects</h1>
+        <h1 class="section__header">Projects</h1>
         <main class="projects">
             <div class="project">
                 <i class="far fa-image fa-8x" id="__1" onclick="on(this)"></i>
                 <div class="project__summary">
                     <h4>Super Adventure</h4>
-                    <p>Stack</p>
+                    <p>C#</p>
                     <p><a href="https://github.com/noorncho/Super-Adventure">Code</a> | Launch</p>
                 </div>
                 <div class="overlay modal" id="overlay__1" onclick="off(this)">
@@ -125,11 +125,11 @@
                         <i class="far fa-image fa-10x overlay__image" ></i>
                         <div class="overlay__summary">
                             <h4>Super Adventure</h4>
-                            <p>Stack</p>
-                            <p><a href="https://github.com/noorncho/Super-Adventure">Code</a> | Launch</p>
+                            <p>C#</p>
+                            <p><a href="https://github.com/noorncho/Super-Adventure" target="_blank"></i></a> | Launch</p>
                         </div>
                         <div class="project__description overlay__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac. 
+                            Texted based adventure game with an interface built using windows forms in Visual Studio 2019.
                         </div>
                     </div>
                 </div>
@@ -137,8 +137,8 @@
             <div class="project">
                 <i class="far fa-image fa-8x" id="__2" onclick="on(this)"></i>
                 <div class="project__summary">
-                    <h4>Project Name</h4>
-                    <p>Stack</p>
+                    <h4>Roof Hooper</h4>
+                    <p><i class="fab fa-python"></i></p>
                     <p>Code | Launch</p>
                 </div>
                 <div class="overlay modal" id="overlay__2" onclick="off(this)">
@@ -146,11 +146,11 @@
                         <i class="far fa-image fa-10x overlay__image"></i>
                         <div class="overlay__summary">
                             <h4>Project Name</h4>
-                            <p>Stack</p>
+                            <p><i class="fab fa-python"></i></p>
                             <p> Code | Launch</p>
                         </div>
                         <div class="project__description overlay__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
+                            A visual Novel built using the Ren-Py game engine. 
                         </div>
                     </div>
                 </div>
@@ -244,27 +244,22 @@
 
     <!--Contact Page-->
     <section id="contact">
-        <h1>Contact Me</h1>
+        <h1 class="section__header">Contact Me</h1>
         <div class="panel">            
             <div class="left__panel">
                 <form class="contact__form">
                     <h3 class="contact__form__title">Send me a message</h3>
-                    <input type="text" value="Name" class="form__input">
-                    <input type="email" value="Email" class="form__input">
-                    <textarea name="message" id="message" cols="30" rows="5" class="form__input">Leave me a message</textarea>
-                    <input type="submit" value="Send" class="form__button">
+                    <input type="text" placeholder="Name" class="form__input">
+                    <input type="email" placeholder="Email" class="form__input">
+                    <textarea name="message" id="message" cols="30" rows="5" class="form__input" placeholder="Leave me a message"></textarea>
+                    <input type="submit" value="Send" class="form__button" onclick="submit()">
                 </form>
             </div>
             <div class="right__panel">
-                <img src="./assets/images/placeholder-1.png">
-                <!--<i class="fab fa-github"></i>-->
-                <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-                <img src="./assets/images/placeholder-1.png">
-                <!--<i class="fab fa-linkedin"></i>-->
-                <img src="./assets/images/placeholder-1.png">
-                <!--<i class="far fa-envelope"></i>-->
-                <img src="./assets/images/placeholder-1.png">
-                <!--<i class="fas fa-download"></i>-->
+                <a href="https://github.com/noorncho" target="_blank"><i class="fab fa-github fa-4x"></i></a>
+                <i class="fab fa-linkedin fa-4x"></i>
+                <a href="mailto:thoughts316@gmail.com?subject = My Website&body = Message" target="_blank"><i class="far fa-envelope fa-4x"></i></a>
+                <a href="" target="_blank"><i class="fas fa-download fa-4x"></i></a>
             </div>
         </div>
     </section>

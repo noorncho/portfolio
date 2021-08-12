@@ -7,15 +7,13 @@
     }
 
     .right__panel{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-content: center;
-        width: 100vw;
-    }
-
-    img{
-        height: 100px;
-        width: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        i{
+            margin: 10px;
+        }
     }
 }
 
@@ -45,24 +43,36 @@
 
 @media screen and (min-width: 770px) {
     #contact{
-        background-color: $secondary-colour;
-        color: $primary-colour
-        /*.panel{
+        .panel{
             display: flex;
-            border: $secondary-colour solid 2px;
-            align-items: center;
             justify-content: space-evenly;
         }
     
         .right__panel{
+            height: 100%;
             display: flex;
             flex-direction: column;
-            align-content: center;
+            justify-items: center;
+            align-items: center;
     
-            img{
-                height: 14%; 
-                width: 14%;
+            i{
+                font-size: 5em;
+                margin: 0;
             }
-        }*/
-    }    
+
+            a{
+                text-decoration: none;
+                color: $secondary-colour;
+            }
+        }
+
+        .left__panel{
+            justify-items: center;
+        }
+    }
+
+    .contact__form{
+        height: 100%;
+        padding: 15px;
+    }
 }
