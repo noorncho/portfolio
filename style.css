@@ -247,14 +247,12 @@ nav {
   margin-top: 20px;
 }
 #contact .right__panel {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-content: center;
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-#contact img {
-  height: 100px;
-  width: 100px;
+#contact .right__panel i {
+  margin: 10px;
 }
 
 .contact__form {
@@ -279,9 +277,29 @@ nav {
 }
 
 @media screen and (min-width: 770px) {
-  #contact {
-    background-color: #ffe3da;
-    color: #1d223e;
+  #contact .panel {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #contact .right__panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  #contact .right__panel i {
+    font-size: 5em;
+    margin: 0;
+  }
+  #contact .right__panel a {
+    text-decoration: none;
+    color: #ffe3da;
+  }
+
+  .contact__form {
+    height: 100%;
+    padding: 15px;
   }
 }
 * {

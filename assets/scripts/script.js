@@ -7,6 +7,9 @@ function closeNav() {
 	document.getElementById("nav").style.width = "0%";
 }*/
 
+function submit(){
+	alert("Thank you! Your message has been sent.");
+}
 
 /**
  * Turn on overlay modal when clicked on image
