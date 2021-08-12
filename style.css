@@ -94,7 +94,6 @@ nav {
   grid-template-rows: 1fr 1fr;
   text-align: center;
   justify-items: center;
-  gap: 15vh;
 }
 
 .line-border {
@@ -210,6 +209,13 @@ nav {
 }
 
 @media screen and (min-width: 770px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.4em;
+  }
+
   .overlay .modal {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
@@ -297,6 +303,11 @@ body {
 section {
   width: 100vw;
   scroll-snap-align: start;
+}
+
+.section__header {
+  font-size: 3.5em;
+  margin: 5vw;
 }
 
 footer {
