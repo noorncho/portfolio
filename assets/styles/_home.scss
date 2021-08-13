@@ -34,7 +34,7 @@
 .intro{
     margin: 30% 10% 0% 10%;
     
-    h1{
+    &__title, &__greeting{
         font-size: 3.5em;
     }
 }
@@ -48,8 +48,11 @@
 	}
 	.intro{
 		margin: 0;
-		h1{
+		&__title{
 			font-size: 5em;
+		}
+		&__greeting{
+			font-size: 4.5em;
 		}
 	}
 }
