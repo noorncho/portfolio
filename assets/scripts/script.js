@@ -1,12 +1,3 @@
-
-/*function openNav() {
-	document.getElementById("nav").style.width = "75%";
-}
-
-function closeNav() {
-	document.getElementById("nav").style.width = "0%";
-}*/
-
 function submit(){
 	alert("Thank you! Your message has been sent.");
 }
@@ -29,7 +20,6 @@ function off(mod){
 
 /**
  * Typing effect animation
- * src = https://usefulangle.com/post/75/typing-effect-animation-javascript-css
  */
 var _CONTENT = [ 
 	"Hello, I am ",

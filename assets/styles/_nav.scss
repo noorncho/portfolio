@@ -32,7 +32,8 @@ nav{
 @media screen and (min-width:770px){
     .nav{
         display: grid;
-        grid-template-columns: 2fr 4fr;        
+        grid-template-columns: 2fr 4fr;
+        justify-items: center;        
     
         &__title{
             display: block;

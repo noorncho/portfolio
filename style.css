@@ -28,6 +28,7 @@ nav {
   .nav {
     display: grid;
     grid-template-columns: 2fr 4fr;
+    justify-items: center;
   }
   .nav__title {
     display: block;
@@ -54,6 +55,7 @@ nav {
   vertical-align: middle;
   color: #ffe3da;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 #hello-cursor {
@@ -76,17 +78,28 @@ nav {
 .intro {
   margin: 30% 10% 0% 10%;
 }
-.intro h1 {
-  font-weight: 3.5em;
+.intro__title, .intro__greeting {
+  font-size: 3.5em;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+@media screen and (min-width: 770px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
 
+  .intro {
+    margin: 0;
+  }
+  .intro__title {
+    font-size: 5em;
+  }
+  .intro__greeting {
+    font-size: 4.5em;
+  }
+}
 /*Skills Section*/
 .skills {
   display: grid;
@@ -94,6 +107,7 @@ nav {
   grid-template-rows: 1fr 1fr;
   text-align: center;
   justify-items: center;
+  gap: 15vh;
 }
 
 .line-border {
@@ -247,12 +261,15 @@ nav {
   margin-top: 20px;
 }
 #contact .right__panel {
-  width: 100%;
   display: flex;
   align-items: center;
 }
 #contact .right__panel i {
   margin: 10px;
+}
+#contact .right__panel a {
+  text-decoration: none;
+  color: #ffe3da;
 }
 
 .contact__form {
@@ -267,11 +284,11 @@ nav {
   text-align: center;
   width: 75vw;
 }
-.contact__form .form__input {
+.contact__form__input {
   border-radius: 5px;
   width: 100%;
 }
-.contact__form .form__button {
+.contact__form__button {
   border-radius: 40px;
   width: 50%;
 }
@@ -292,9 +309,8 @@ nav {
     font-size: 5em;
     margin: 0;
   }
-  #contact .right__panel a {
-    text-decoration: none;
-    color: #ffe3da;
+  #contact .left__panel {
+    justify-items: center;
   }
 
   .contact__form {
@@ -316,6 +332,7 @@ body {
   background-color: #1d223e;
   color: #ffe3da;
   scroll-snap-type: y mandatory;
+  width: 100vw;
 }
 
 section {
@@ -324,7 +341,7 @@ section {
 }
 
 .section__header {
-  font-size: 3.5em;
+  font-size: 4.3em;
   margin: 5vw;
 }
 
