@@ -318,6 +318,15 @@ nav {
     padding: 15px;
   }
 }
+/*Button Styles*/
+.btn__primary {
+  color: #ffe3da;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: #ffe3da;
+  background-color: #1d223e;
+}
+
 * {
   margin: 0;
   padding: 0;
