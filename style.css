@@ -102,12 +102,15 @@ nav {
 }
 /*Skills Section*/
 .skills {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   text-align: center;
-  justify-items: center;
-  gap: 15vh;
+  justify-items: center;*/
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .line-border {
@@ -149,6 +152,15 @@ nav {
   font-size: 1.3em;
 }
 
+@media screen and (min-width: 768px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
 /*Project Section*/
 #project-section {
   padding-bottom: 7vh;
