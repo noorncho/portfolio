@@ -187,8 +187,16 @@ nav {
 }
 
 .portfolio-image {
-  width: 100%;
+  width: 70%;
   height: 180px;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5%;
+  border: #ffe3da solid 3px;
+  box-shadow: -15px -15px #ffe3da;
 }
 
 .overlay {
@@ -218,6 +226,7 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 2fr;
   pointer-events: auto;
+  justify-items: center;
 }
 .overlay a {
   color: black;
@@ -233,13 +242,14 @@ nav {
 .overlay__summary {
   grid-row-start: 2;
   grid-row-end: 3;
+  align-self: center;
 }
 .overlay__description {
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -256,6 +266,8 @@ nav {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    align-self: center;
+    box-shadow: none;
   }
   .overlay__summary {
     grid-row-start: 1;
@@ -268,6 +280,11 @@ nav {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
+  }
+
+  .portfolio-image {
+    width: 95%;
+    height: 190px;
   }
 }
 /*Contact Section*/
