@@ -99,7 +99,7 @@ img{
     .projects{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
+        //grid-template-rows: 1fr 1fr; //Uncomment when more projects added
         font-size: 1.4em;
     }
     .overlay{
