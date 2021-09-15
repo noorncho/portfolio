@@ -1,7 +1,29 @@
+/** */
+const hamburger = document.querySelector(".nav__hamburger");
+const navMenu = document.querySelector(".nav__menu");
+const navItem = document.querySelectorAll(".nav__item");
+
+hamburger.addEventListener("click", mobileMenu);
+navItem.forEach(e => e.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+
 function submit(){
 	alert("Thank you! Your message has been sent.");
 }
 
+/****************************************************
+ * 			Project Details Overlay Effect
+ ****************************************************/
 /**
  * Turn on overlay modal when clicked on image
  * @param {*} img 
@@ -18,9 +40,9 @@ function off(mod){
 }
 
 
-/**
- * Typing effect animation
- */
+/**********************************************
+ * 				Typing effect animation
+ **********************************************/
 var _CONTENT = [ 
 	"Hello, I am ",
     "Bonjour"
