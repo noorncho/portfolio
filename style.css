@@ -1,6 +1,6 @@
 /*Nav*/
 .nav {
-  height: 7vh;
+  height: 8vh;
   align-items: center;
   justify-content: space-between;
   background-color: #a7778e;
@@ -409,7 +409,7 @@ img {
 }
 
 html {
-  scroll-padding-top: 7vh;
+  scroll-padding-top: 8vh;
 }
 
 body {
