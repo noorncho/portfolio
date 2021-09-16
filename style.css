@@ -342,37 +342,43 @@ img {
 #contact .right__panel {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 #contact .right__panel i {
   margin: 10px;
+  font-size: 5em;
 }
 #contact .right__panel a {
   text-decoration: none;
   color: #ffe3da;
 }
 
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-  gap: 10px;
-  width: 60vw;
-}
-.contact__form__title {
-  text-align: center;
-  width: 75vw;
-}
-.contact__form__input {
-  border-radius: 5px;
-  width: 100%;
-}
-.contact__form__button {
-  border-radius: 40px;
-  width: 50%;
-}
+/* Uncomment if keeping contact form
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 60vw;
 
-@media screen and (min-width: 770px) {
+    &__title{
+        text-align: center;
+        width: 75vw;
+    }
+
+    &__input{
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    &__button{
+        border-radius: 40px;
+        width: 50%;
+    }
+}
+*/
+@media screen and (min-width: 768px) {
   #contact .panel {
     display: flex;
     justify-content: space-evenly;
@@ -380,13 +386,13 @@ img {
   #contact .right__panel {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
   }
   #contact .right__panel i {
-    font-size: 5em;
-    margin: 0;
+    font-size: 6em;
+    margin: 0.5em;
   }
   #contact .left__panel {
     justify-items: center;
