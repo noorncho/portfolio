@@ -56,5 +56,19 @@
         //grid-template-rows: 1fr 1fr; //Uncomment when other skills section completed
         text-align: center;
         justify-items: center;
-    }    
+
+        &__title{
+            font-size: 3rem;
+        }
+
+        &__tech{
+            i{
+                font-size: 45px;
+            }
+        }
+    }
+    
+    .line-border{
+        border-width: 15px;
+    }
 }
