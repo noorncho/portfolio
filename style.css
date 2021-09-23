@@ -11,8 +11,8 @@
 .nav__title {
   color: #ffe3da;
   text-decoration: none;
-  font-size: 1.5em;
-  margin: 2em;
+  font-size: 1.7em;
+  margin-left: 2em;
 }
 .nav__title:hover {
   color: #ffe3da;
@@ -31,8 +31,9 @@
 }
 .nav__item {
   color: #ffe3da;
-  margin: 1em;
-  font-size: 1.2em;
+  margin-right: 1em;
+  margin-left: 1em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .nav__item:hover {
