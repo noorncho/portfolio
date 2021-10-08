@@ -3,7 +3,7 @@
   height: 8vh;
   align-items: center;
   justify-content: space-between;
-  background-color: #a7778e;
+  background-color: rgba(167, 119, 142, 0.87);
   position: sticky;
   top: 0;
   width: 100%;
@@ -11,8 +11,8 @@
 .nav__title {
   color: #ffe3da;
   text-decoration: none;
-  font-size: 1.5em;
-  margin: 2em;
+  font-size: 1.7em;
+  margin-left: 2em;
 }
 .nav__title:hover {
   color: #ffe3da;
@@ -31,8 +31,9 @@
 }
 .nav__item {
   color: #ffe3da;
-  margin: 1em;
-  font-size: 1.2em;
+  margin-right: 1em;
+  margin-left: 1em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .nav__item:hover {
@@ -206,6 +207,16 @@
     text-align: center;
     justify-items: center;
   }
+  .skills__title {
+    font-size: 3rem;
+  }
+  .skills__tech i {
+    font-size: 45px;
+  }
+
+  .line-border {
+    border-width: 15px;
+  }
 }
 /*Project Section*/
 #project-section {
@@ -230,6 +241,9 @@
 }
 .project a:hover {
   text-decoration: underline;
+}
+.project__summary > h4, .project__summary > p {
+  color: #1d223e;
 }
 
 .portfolio-image {
@@ -333,6 +347,9 @@ img {
   }
 }
 /*Contact Section*/
+#contact {
+  color: #1d223e;
+}
 #contact .panel {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -350,7 +367,7 @@ img {
 }
 #contact .right__panel a {
   text-decoration: none;
-  color: #ffe3da;
+  color: #1d223e;
 }
 
 /* Uncomment if keeping contact form
@@ -423,7 +440,8 @@ html {
 }
 
 body {
-  background-color: #1d223e;
+  background: #020024;
+  background: linear-gradient(171deg, #020024 0%, #1d223e 25%, #f0c5d6 100%);
   color: #ffe3da;
   scroll-snap-type: y mandatory;
   width: 100vw;

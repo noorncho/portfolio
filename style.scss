@@ -22,7 +22,9 @@ html{
 }
 
 body{
-    background-color: $primary-colour;
+    background: rgb(2,0,36);
+    background: linear-gradient(171deg, rgba(2,0,36,1) 0%, rgba(29,34,62,1) 25%, rgba(240,197,214,1) 100%);
+    //background-color: $primary-colour;
     color: $secondary-colour;
     scroll-snap-type: y mandatory;
     width: 100vw;

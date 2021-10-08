@@ -2,7 +2,7 @@
     height: 8vh;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(167, 119, 142);
+    background-color: rgba(167, 119, 142, 0.87);
     position: sticky;
     top: 0;
     width: 100%;
@@ -10,8 +10,8 @@
     &__title{
         color: $secondary-colour;
         text-decoration: none;
-        font-size: 1.5em;
-        margin: 2em;
+        font-size: 1.7em;
+        margin-left: 2em;
     }
     &__title:hover{
         color: $secondary-colour;
@@ -32,8 +32,9 @@
     }
     &__item{
         color: $secondary-colour;
-        margin: 1em;
-        font-size: 1.2em;
+        margin-right: 1em;
+        margin-left: 1em;
+        font-size: 1.5em;
         font-weight: 600;
     }
     
