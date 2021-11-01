@@ -58,24 +58,28 @@
 @media screen and (max-width: 768px) {
   .nav__title {
     font-size: 1.2em;
+    margin: 0.5em;
   }
   .nav__hamburger {
     display: block;
     cursor: pointer;
+    margin: 8px;
   }
   .nav__menu {
     position: fixed;
     left: -100%;
-    top: 7vh;
+    top: 8vh;
     flex-direction: column;
     background-color: #1d223e;
     width: 100%;
     height: 90%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     justify-content: center;
+  }
+  .nav__item {
+    font-size: 1.8em;
   }
   .nav__menu.active {
     left: 0;
