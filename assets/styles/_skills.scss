@@ -1,74 +1,49 @@
-
 .skills{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    color: $secondary-colour;
+}
+
+.skills__tech{
+    &-header{
+        font-size: 2.5em;
+    }
 }
 
 .line-border{
-    border-color: $secondary-colour;
     border-width: 5px;
     border-left-style: solid;
     border-right-style: solid;
 }
 
-.skills__tech{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    justify-items: center;
-    width: 75vw;
-    margin: 10vh auto;
-
-    i{
-        font-size: 35px;
-    }
-}
-
 .tech-icon{
+    z-index: -1;
     > p{
-    opacity: 0;
-    font-size: 25px;
+        opacity: 0;
+        font-size: 20px;
     }
-} 
+}
+
 .tech-icon:hover{
-    > p{
-    opacity: 1;
-    transition: 0.5s;
+    >p{
+        opacity: 1;
+        transition: 0.5s;
     }
 }
 
-.skills__other{
-    display: flex;
-    list-style-position: inside;
-    text-align: left;
-    width: 75vw;
-    margin: 10vh auto;
-    padding: 20px;
-    font-size: 1.3em;
-}
-
-@media screen and (min-width: 768px) {
-    .skills{
-        display: grid;
-        grid-template-columns: 1fr;
-        //grid-template-rows: 1fr 1fr; //Uncomment when other skills section completed
-        text-align: center;
-        justify-items: center;
-
-        &__title{
-            font-size: 3rem;
-        }
-
-        &__tech{
-            i{
-                font-size: 45px;
-            }
+@media screen and (min-width: 768px){
+    .skills__tech, .skills__other{
+        &-header{
+            font-size:3em;
         }
     }
-    
+
+    .tech-icon{
+        i{
+            font-size: 4em;
+        }
+    }
+
     .line-border{
         border-width: 15px;
     }
+
 }

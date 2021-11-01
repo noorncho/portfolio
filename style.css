@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 .nav__title {
   color: #ffe3da;
@@ -155,34 +156,25 @@
 }
 /*Skills Section*/
 .skills {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  color: #ffe3da;
+}
+
+.skills__tech-header {
+  font-size: 2.5em;
 }
 
 .line-border {
-  border-color: #ffe3da;
   border-width: 5px;
   border-left-style: solid;
   border-right-style: solid;
 }
 
-.skills__tech {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-  width: 75vw;
-  margin: 10vh auto;
+.tech-icon {
+  z-index: -1;
 }
-.skills__tech i {
-  font-size: 35px;
-}
-
 .tech-icon > p {
   opacity: 0;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .tech-icon:hover > p {
@@ -190,28 +182,13 @@
   transition: 0.5s;
 }
 
-.skills__other {
-  display: flex;
-  list-style-position: inside;
-  text-align: left;
-  width: 75vw;
-  margin: 10vh auto;
-  padding: 20px;
-  font-size: 1.3em;
-}
-
 @media screen and (min-width: 768px) {
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
+  .skills__tech-header, .skills__other-header {
+    font-size: 3em;
   }
-  .skills__title {
-    font-size: 3rem;
-  }
-  .skills__tech i {
-    font-size: 45px;
+
+  .tech-icon i {
+    font-size: 4em;
   }
 
   .line-border {
@@ -219,51 +196,25 @@
   }
 }
 /*Project Section*/
-#project-section {
-  padding-bottom: 7vh;
-}
-
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+#projects .section-header {
+  color: #ffe3da;
 }
 
 .project {
-  margin: 20px;
-  text-align: center;
-}
-.project a {
-  text-decoration: none;
-  color: #ffe3da;
-}
-.project a:hover {
-  text-decoration: underline;
-}
-.project__summary > h4, .project__summary > p {
   color: #1d223e;
 }
 
-.portfolio-image {
-  width: 70%;
-  height: 180px;
-}
-
-img {
-  width: 180px;
-  height: 180px;
+.project__tile-image {
+  min-width: 50%;
+  height: 80%;
+  max-width: 60%;
   border-radius: 5%;
-  border: #ffe3da solid 3px;
   box-shadow: -15px -15px #ffe3da;
 }
 
-.overlay {
+.project__overlay {
   position: fixed;
   display: none;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -273,7 +224,7 @@ img {
   cursor: pointer;
   color: black;
 }
-.overlay .modal {
+.project__overlay .project__modal {
   max-width: 100%;
   position: relative;
   top: 10px;
@@ -283,143 +234,43 @@ img {
   background: #ffffff;
   box-shadow: 0 0 10px #000000;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
   pointer-events: auto;
-  justify-items: center;
 }
-.overlay a {
-  color: black;
-  text-decoration: none;
-}
-.overlay a:hover {
-  text-decoration: underline;
-}
+
 .overlay__image {
-  grid-row-start: 1;
-  grid-row-end: 2;
+  min-width: 50%;
+  height: 80%;
+  max-width: 60%;
+  border-radius: 5%;
 }
-.overlay__summary {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  align-self: center;
-}
-.overlay__description {
-  grid-row-start: 3;
-  grid-row-end: 4;
+.overlay__summary a {
+  color: #1d223e;
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 1.4em;
+  .project__tile-summary h4, .project__tile-summary p {
+    font-size: 2.2em;
+  }
+  .project__tile-summary button {
+    font-size: 1.7em;
   }
 
-  .overlay .modal {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
-  }
-  .overlay__image {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    align-self: center;
-    box-shadow: none;
-  }
   .overlay__summary {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .overlay__description {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .portfolio-image {
-    width: 95%;
-    height: 190px;
+    font-size: 16px;
   }
 }
 /*Contact Section*/
-#contact {
-  color: #1d223e;
-}
-#contact .panel {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  margin-top: 20px;
-}
-#contact .right__panel {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-#contact .right__panel i {
-  margin: 10px;
-  font-size: 5em;
-}
-#contact .right__panel a {
-  text-decoration: none;
+#contact .section-header {
   color: #1d223e;
 }
 
-/* Uncomment if keeping contact form
-.contact__form{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
-    gap: 10px;
-    width: 60vw;
-
-    &__title{
-        text-align: center;
-        width: 75vw;
-    }
-
-    &__input{
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    &__button{
-        border-radius: 40px;
-        width: 50%;
-    }
+.social-icon a {
+  color: #1d223e;
 }
-*/
-@media screen and (min-width: 768px) {
-  #contact .panel {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #contact .right__panel {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
-  }
-  #contact .right__panel i {
-    font-size: 6em;
-    margin: 0.5em;
-  }
-  #contact .left__panel {
-    justify-items: center;
-  }
-
-  .contact__form {
-    height: 100%;
-    padding: 15px;
-  }
+.social-icon a:hover {
+  color: #1d223e;
 }
+
 /*Button Styles*/
 .btn__primary {
   color: #ffe3da;
@@ -427,6 +278,15 @@ img {
   padding: 5px;
   border-color: #ffe3da;
   background-color: #1d223e;
+}
+
+.btn_primary {
+  border-radius: 5px;
+  border: none;
+  padding: 0.25em;
+  background-color: #1d223e;
+  border-color: #ffe3da;
+  color: #ffe3da;
 }
 
 * {
@@ -457,6 +317,16 @@ section {
   margin: 5vw;
 }
 
+.section-header {
+  font-size: 4.3em;
+}
+
 footer {
-  text-align: center;
+  color: #1d223e;
+}
+
+@media screen and (min-width: 768px) {
+  .section-header {
+    font-size: 4.5em;
+  }
 }
