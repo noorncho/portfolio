@@ -29,13 +29,13 @@ function submit(){
  * @param {*} img 
  */
 function on(img){    
-    document.getElementById("overlay" + img.id).style.display = "block";
+    document.getElementById("project__overlay" + img.id).style.display = "block";
 }
 /**
  * Turn off overlay modal
  * @param {*} mod 
  */
-function off(mod){
+function off (mod){
     document.getElementById("" + mod.id).style.display = "none";
 }
 
