@@ -239,6 +239,9 @@
   max-width: 60%;
   border-radius: 5%;
 }
+.overlay__summary a {
+  color: #1d223e;
+}
 
 @media screen and (min-width: 768px) {
   .project__tile-summary h4, .project__tile-summary p {
