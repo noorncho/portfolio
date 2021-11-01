@@ -1,54 +1,24 @@
-#project-section{
-    padding-bottom: 7vh;
-}
-
-.projects{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.project{
-    margin: 20px;
-    text-align: center;
-
-
-    a{
-        text-decoration: none;
+#projects{
+    .section-header{
         color: $secondary-colour;
-        
     }
-    a:hover{
-        text-decoration: underline;
-    }
-
-    &__summary{
-        > h4, >p{
-            color: $primary-colour;
-        }
+}
+.project{
+    color: $primary-colour;
+}
+.project__tile{
+    &-image{
+        min-width: 50%;
+        height: 80%;
+        max-width: 60%;
+        border-radius: 5%;
+        box-shadow: -15px -15px $secondary-colour; 
     }
 }
 
-.portfolio-image{
-    width: 70%;
-    height: 180px;
-}
-
-img{
-    width: 180px;
-    height: 180px;
-    border-radius: 5%;
-    border: $secondary-colour solid 3px;
-    box-shadow: -15px -15px $secondary-colour;    
-}
-
-.overlay{
+.project__overlay{
     position: fixed;
     display: none;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -60,7 +30,7 @@ img{
     //Addition
     color: black;
 
-    .modal{
+    .project__modal{
         max-width: 100%;
         position: relative;
         top: 10px;
@@ -70,77 +40,30 @@ img{
         background: #ffffff;
         box-shadow: 0 0 10px #000000;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
         pointer-events: auto;
-        justify-items: center;
-    }
-
-    a{
-        color: black;
-        text-decoration: none;
-    }
-
-    a:hover{
-        text-decoration: underline;
-    }
-
-    &__image{
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    &__summary{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        align-self: center;
-    }
-
-    &__description{
-        grid-row-start: 3;
-        grid-row-end: 4;
     }
 }
 
-@media  screen and (min-width: 768px) {
-    .projects{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: 1fr 1fr; //Uncomment when more projects added
-        font-size: 1.4em;
-    }
-    .overlay{
-        .modal{
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr 2fr;
-        }
-        
-        &__image{
-            grid-row-start: 1;
-            grid-row-end: 3;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            align-self: center;
-            box-shadow: none;
-        }
+.overlay__image{
+    min-width: 50%;
+    height: 80%;
+    max-width: 60%;
+    border-radius: 5%;
+}
 
-        &__summary{
-            grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-
-        &__description{
-            grid-row-start: 2;
-            grid-row-end: 4;
-            grid-column-start: 2;
-            grid-column-end: 3;
+@media screen and (min-width: 768px){
+    .project__tile{
+        &-summary{
+            h4, p{
+                font-size: 2.2em;
+            }
+            button{
+                font-size: 1.7em;
+            }
         }
     }
 
-    .portfolio-image{
-        width: 95%;
-        height: 190px;
+    .overlay__summary{
+        font-size: 16px;
     }
 }

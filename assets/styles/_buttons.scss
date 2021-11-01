@@ -5,3 +5,12 @@
     border-color: $secondary-colour;
     background-color: $primary-colour;
 }
+
+.btn_primary{
+    border-radius: 5px;
+    border: none;
+    padding: 0.25em;
+    background-color: $primary-colour;
+    border-color: $secondary-colour;
+    color: $secondary-colour;
+}

@@ -23,7 +23,7 @@
         <div class="nav__menu">
             <a href="#home" class="nav__item">Home</a>
             <a href="#skills" class="nav__item">Skills</a>
-            <a href="#project-section" class="nav__item">Projects</a>
+            <a href="#projects" class="nav__item">Projects</a>
             <a href="#contact" class="nav__item">Contact</a>
         </div>
 
@@ -126,62 +126,47 @@
     </section>
     
     <!--My Project Page-->
-    <section id="project-section">
-        <h1 class="section__header">Projects</h1>
-        <main class="projects">
-            <div class="project">
-                <img src="./assets/images/tictactoe.png" alt="tictactoe-image" id="__1" onclick="on(this)">
-                <div class="project__summary">
-                    <h4>Tic-Tac-Toe</h4>
-                    <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
-                    <button class="project__button btn__primary" id="__1" onclick="on(this)">Details</button>
-                </div>
-                <div class="overlay modal" id="overlay__1" onclick="off(this)">
-                    <div class="modal">
-                        <img src="./assets/images/tictactoe.png" alt="tictactoe-image" class="overlay__image"> 
-                        <div class="overlay__summary">
-                            <h4>Tic-Tac-Toe</h4>
-                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
-                            <p><a href="https://github.com/noorncho/tic-tac-toe" target="_blank">Code</a> | <a href="https://noorncho.github.io/tic-tac-toe/" target="_blank"> Launch</a></p>
-                        </div>
-                        <div class="project__description overlay__description">
-                            This is a TicTacToe game where you can either play with another human or play aginast a computer.
-                        </div>
+    <sections id="projects" class="w-100">
+        <h1 class="section-header mb-5">Projects</h1>
+        <div class="project-gallary mb-5">
+            <!--Portfolio Project-->
+            <div class="project row">
+                <div class="project__tile d-flex justify-content-around mt-2" data-aos="zoom-in">
+                    <img src="./assets/images/portfolio.png" alt="portfolio website thumbnail" class="project__tile-image" id="__1" onclick="on(this)">
+                    <div class="project__tile-summary">
+                        <h4>This Site!</h4>
+                        <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i> <i class="fab fa-bootstrap"></i></p>
+                        <button class="btn_primary" id="__1" onclick="on(this)">Details</button>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <img src="./assets/images/portfolio.png" id="__2" class="portfolio-image" alt="portfolio-image" onclick="on(this)">
-                <div class="project__summary">
-                    <h4>This Site!</h4>
-                    <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i></p>
-                    <button class="project__button btn__primary" id="__2" onclick="on(this)">Details</button>
-                </div>
-                <div class="overlay modal" id="overlay__2" onclick="off(this)">
-                    <div class="modal">
-                        <img src="./assets/images/portfolio.png" class="portfolio-image overlay__image" alt="portfolio-image">                        
-                        <!--<i class="far fa-image fa-10x overlay__image"></i>-->
-                        <div class="overlay__summary">
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__1" onclick="off(this)">
+                    <div class="project__modal d-flex flex-column justify-content-center">
+                        <img src="./assets/images/portfolio.png" alt="Portfolio Image" class="overlay__image align-self-center">
+                        <div class="overlay__summary px-5">
                             <h4>This Site!</h4>
-                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i></p>
-                            <p><a href="https://github.com/noorncho/portfolio" target="_blank">Code</a> | Launch</p>
+                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i> <i class="fab fa-bootstrap"></i></p>
+                            <p><a href="https://github.com/noorncho/portfolio" target="_blank">Code</a> | <a href="https://noorncho.com" target="_blank">Launch</a></p>
                         </div>
                         <div class="project__description overlay__description">
-                            This site is a personal portfolio that I designed and built from scratch to display my web developemnt skills and other projects that I have worked on as part of the _nology training program. This is an ongoing projected, that I will continuing to develop and add to over time. 
+                            This site is a personal portfolio that I designed and built from scratch to display my web developemnt skills and other projects that I have worked on as part of the _nology training program and outside. This is an ongoing projected, that I will continuing to develop and add to over time.
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <div class="project">
-                <img src="./assets/images/morse-code-translator.png" id="__3" class="portfolio-image" alt="Morse Code Translator Image" onclick="on(this)">
-                <div class="project__summary">
-                    <h4>Morse Code Translator</h4>
-                    <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i> <i class="fab fa-npm"></i></p>
-                    <button class="project__button btn__primary" id="__3" onclick="on(this)">Details</button>
+            <!--Morse Code Project-->
+            <div class="project row">
+                <div class="project__tile d-flex flex-row-reverse justify-content-around mt-2" data-aos="zoom-in">
+                    <img src="./assets/images/morse-code-translator.png" alt="portfolio website thumbnail" class="project__tile-image mx-2" id="__2" onclick="on(this)">
+                    <div class="project__tile-summary px-3 mb-3">
+                        <h4>Morse Code Translator</h4>
+                        <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i> <i class="fab fa-npm"></i></p>
+                        <button class="btn_primary" id="__2" onclick="on(this)">Details</button>
+                    </div>
                 </div>
-                <div class="overlay modal" id="overlay__3" onclick="off(this)">
-                    <div class="modal">
-                        <img src="./assets/images/morse-code-translator.png" class="portfolio-image" alt="Morse Code Translator Image" > 
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__2" onclick="off(this)">
+                    <div class="project__modal d-flex flex-column justify-content-center">     
+                        <img src="./assets/images/morse-code-translator.png" alt="Morse Code Translator" class="overlay__image align-self-center">
                         <div class="overlay__summary">
                             <h4>Morse Code Translator</h4>
                             <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js-square"></i> <i class="fab fa-npm"></i></p>
@@ -192,37 +177,94 @@
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <div class="project" style="display: none;">
-                <i class="far fa-image fa-8x" id="__4" onclick="on(this)"></i>
-                <div class="project__summary">
-                    <h4>Punk API</h4>
-                    <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-react"></i></p>
-                    <button class="project__button btn__primary" id="__4" onclick="on(this)">Details</button>
+            <!--Tic-Tac-Toe Project-->
+            <div class="project row">
+                <div class="project__tile d-flex justify-content-around mb-3" data-aos="zoom-in">
+                    <i class="far fa-image fa-8x" id="__3" onclick="on(this)"></i>
+                    <div class="project__tile-summary">
+                        <h4>Tic-Tac-Toe</h4>
+                        <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
+                        <button class="btn_primary" id="__3" onclick="on(this)">Details</button>
+                    </div>
                 </div>
-                <div class="overlay modal" id="overlay__4" onclick="off(this)">
-                    <div class="modal">                        
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__3" onclick="off(this)">
+                    <div class="project__modal">     
                         <i class="far fa-image fa-10x overlay__image"></i>
                         <div class="overlay__summary">
-                            <h4>Punk API</h4>
-                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-react"></i></p>
-                            <p> Code | Launch</p>
+                            <h4>Tic-Tac-Toe</h4>
+                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
+                            <p><a href="https://github.com/noorncho/tic-tac-toe" target="_blank">Code</a> | <a href="https://noorncho.github.io/tic-tac-toe/" target="_blank">Launch</a></p>
+                        </div>
+                        <div class="project__description overlay__description">
+                            This is a TicTacToe game where you can either play with another human or play aginast a computer.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--Calculator Project-->
+            <div class="project row">
+                <div class="project__tile d-flex flex-row-reverse justify-content-around mx-3" data-aos="zoom-in">
+                    <img src="./assets/images/calculator-js.png" alt="Calculator Project Image" class="project__tile-image" id="__4" onclick="on(this)">
+                    <div class="project__tile-summary">
+                        <h4>Calculator</h4>
+                        <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
+                        <button class="btn_primary" id="__4" onclick="on(this)">Details</button>
+                    </div>
+                </div>
+                <div class="project__overlay project__modal text-center  w-100 h-100" id="project__overlay__4" onclick="off(this)">
+                    <div class="project__modal d-flex flex-column justify-content-center">     
+                        <img src="./assets/images/calculator-js.png" alt="Calculator Project" class="overlay__image align-self-center">
+                        <div class="overlay__summary">
+                            <h4>Calculator</h4>
+                            <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-sass"></i></p>
+                            <p> <a href="https://github.com/noorncho/calculator-using-js" target="_blank">Code</a> | <a href="https://noorncho.github.io/calculaor-using-js/" target="_blank">Launch</a></p>
+                        </div>
+                        <div class="project__description overlay__description">
+                            This is a simple calculator that allows user to perform basic operations such as addition, subtraction, multiplication, division and handles some additional features such as negation. The Cypress Testing Libray is used for End to End Testing.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--Little Adventure Project-->
+            <div class="project row">
+                <div class="project__tile d-flex justify-content-around mb-3" data-aos="zoom-in">
+                    <i class="far fa-image fa-8x" id="__5" onclick="on(this)"></i>
+                    <div class="project__tile-summary">
+                        <h4>Little Adventures</h4>
+                        <p><i class="fab fa-java fa-2x"></i></p>
+                        <button class="btn_primary" id="__5" onclick="on(this)">Details</button>
+                    </div>
+                </div>
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__5" onclick="off(this)">
+                    <div class="project__modal">     
+                        <i class="far fa-image fa-10x overlay__image"></i>
+                        <div class="overlay__summary">
+                            <h4>Little Adventures</h4>
+                            <p><i class="fab fa-java fa-2x"></i></p>
+                            <p> Code </p>
                         </div>
                         <div class="project__description overlay__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="project" style="display: none;">
-                <i class="far fa-image fa-8x" id="__5" onclick="on(this)"></i>
-                <div class="project__summary">
-                    <h4>Project Name</h4>
-                    <p>Stack</p>
-                    <button class="project__button btn__primary" id="__5" onclick="on(this)">Details</button>
+                <hr>
+            </div>            
+            <div class="project row" style="display: none;">
+                <div class="project__tile d-flex flex-row-reverse justify-content-around mb-3">
+                    <i class="far fa-image fa-8x" id="__6" onclick="on(this)"></i>
+                    <div class="project__tile-summary">
+                        <h4>Project Name</h4>
+                        <p>Stack</p>
+                        <button class="btn_primary" id="__6" onclick="on(this)">Details</button>
+                    </div>
                 </div>
-                <div class="overlay modal" id="overlay__5" onclick="off(this)">
-                    <div class="modal">     
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__6" onclick="off(this)">
+                    <div class="project__modal">     
                         <i class="far fa-image fa-10x overlay__image"></i>
                         <div class="overlay__summary">
                             <h4>Project Name</h4>
@@ -230,34 +272,14 @@
                             <p> Code | Launch</p>
                         </div>
                         <div class="project__description overlay__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
+                            6-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <div class="project" style="display: none;">
-                <i class="far fa-image fa-8x" id="__6" onclick="on(this)"></i>
-                <div class="project__summary">
-                    <h4>Project Name</h4>
-                    <p>Stack</p>
-                    <button class="project__button btn__primary" id="__6" onclick="on(this)">Details</button>
-                </div>
-                <div class="overlay modal" id="overlay__6" onclick="off(this)">
-                    <div class="modal">                        
-                        <i class="far fa-image fa-10x overlay__image"></i>
-                        <div class="overlay__summary">
-                            <h4>Project Name</h4>
-                            <p>Stack</p>
-                            <p> Code | Launch</p>
-                        </div>
-                        <div class="project__description overlay__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </section>
+        </div>
+    </sections>
 
     <!--Contact Page-->
     <section id="contact">
