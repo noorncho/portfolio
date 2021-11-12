@@ -39,12 +39,12 @@
     </nav>
 
     <section id="home" class="home">
-        <div class="intro">
+        <!--<div class="intro">
             <h1 id="hello-text" class="intro__greeting"></h1><div id="hello-cursor"></div>        
-        </div>
+        </div>-->
         <div class="into-text">            
-            <h1 class="intro__title">Noor Ncho</h1>
-            <h2>Software Developer</h2>
+            <h1 class="intro__text-title">Noor Ncho</h1>
+            <h2 class="intro__text-subtitle">Software Developer</h2>
         </div>
     </section>
     
@@ -269,6 +269,31 @@
                     </div>
                 </div>
                 <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__6" onclick="off(this)">
+                    <div class="project__modal d-flex flex-column justify-content-center">     
+                        <i class="far fa-image fa-10x overlay__image"></i>
+                        <div class="overlay__summary">
+                            <h4>Project Name</h4>
+                            <p>Stack</p>
+                            <p> Code | Launch</p>
+                        </div>
+                        <div class="project__description overlay__description">
+                            6-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, nisl ac rhoncus pellentesque, augue massa pharetra velit, varius laoreet nibh massa nec nibh. Sed libero odio, porttitor eu dui fermentum, tincidunt pretium lorem. Aliquam in tortor condimentum, efficitur felis sit amet, blandit urna. Sed varius hendrerit sapien, sit amet porta arcu facilisis ac.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>                    
+            <!--Empty Project-->          
+            <div class="project row  w-75" style="display: none;">
+                <div class="project__tile d-flex flex-row-reverse justify-content-around mb-3">
+                    <i class="far fa-image fa-8x" id="__7" onclick="on(this)"></i>
+                    <div class="project__tile-summary">
+                        <h4>Project Name</h4>
+                        <p>Stack</p>
+                        <button class="btn_primary" id="__7" onclick="on(this)">Details</button>
+                    </div>
+                </div>
+                <div class="project__overlay project__modal text-center w-100 h-100" id="project__overlay__7" onclick="off(this)">
                     <div class="project__modal d-flex flex-column justify-content-center">     
                         <i class="far fa-image fa-10x overlay__image"></i>
                         <div class="overlay__summary">

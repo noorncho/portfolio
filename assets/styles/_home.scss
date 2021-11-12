@@ -60,11 +60,16 @@
 	}
 	.intro{
 		margin: 0;
-		&__title{
-			font-size: 5em;
-		}
 		&__greeting{
 			font-size: 4.5em;
+		}
+
+		&__text-title{
+			font-size: 6em;
+		}
+
+		&__text-subtitle{
+			font-size: 4em;
 		}
 	}
 }

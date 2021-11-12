@@ -142,11 +142,14 @@
   .intro {
     margin: 0;
   }
-  .intro__title {
-    font-size: 5em;
-  }
   .intro__greeting {
     font-size: 4.5em;
+  }
+  .intro__text-title {
+    font-size: 6em;
+  }
+  .intro__text-subtitle {
+    font-size: 4em;
   }
 }
 /*Skills Section*/
