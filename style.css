@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 /*Nav*/
 .nav {
   height: 9vh;
@@ -62,7 +63,7 @@
 @media screen and (min-width: 768px) {
   .nav__title {
     font-size: 1.9em;
-    font-weight: 700;
+    font-weight: 600;
   }
   .nav__hamburger {
     display: none;
@@ -288,6 +289,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 html {
