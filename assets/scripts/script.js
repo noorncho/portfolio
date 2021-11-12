@@ -1,4 +1,14 @@
-/** */
+/********************************************************
+* 			Particle Js
+*********************************************************/
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
+
+/********************************************************** 
+*			Responsive NavBar
+***********************************************************/
 const hamburger = document.querySelector(".nav__hamburger");
 const navMenu = document.querySelector(".nav__menu");
 const navItem = document.querySelectorAll(".nav__item");
